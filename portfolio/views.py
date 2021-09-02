@@ -12,7 +12,7 @@ class IndexView(TemplateView):
         context = super().get_context_data(**kwargs)
 
         # Home
-        home = models.Home.objects.latest('update_time')
+        home = models.Home.objects.latest('updated')
         context['home'] = home
 
         #About
