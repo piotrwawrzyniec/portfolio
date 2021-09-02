@@ -8,7 +8,6 @@ from django.urls import reverse
 class Home(models.Model):
     name = models.CharField(max_length=50)
     intro = models.CharField(max_length=50)
-    picture = models.ImageField(upload_to='picture/')
     updated = models.DateTimeField(auto_now=True)
 
     def __str__(self):
