@@ -3,6 +3,8 @@ from django.views.generic import TemplateView
 from portfolio import models
 
 # Create your views here.
+class RainProjectView(TemplateView):
+    template_name = 'rain_project.html'
 
 class IndexView(TemplateView):
 
